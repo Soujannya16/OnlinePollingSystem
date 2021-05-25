@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CASTING PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style ="background: url(https://www.ablpantigua.com/wp-content/uploads/2018/03/featured_electronic_voting.jpg) ; background-size: 100% 100% ; background-repeat: no-repeat;background-size: cover;">
+   
+    <body>
+     <style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+  .container img {
+  width: 100%;
+  height: auto;
+}        
+         
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+
+
+
+</style>  
+
+<script>
+    function putval(data0) {
+    document.forms[0].vote_id.value=data0;
+}
+</script>
+
+
+    <form action="casting" method="POST">     
+ <div class="container">       
+<h2>PARTY 1</h2>
+<img src="http://static.dnaindia.com/sites/default/files/2014/04/02/224510-rjd-logo.png" alt="PARTY A" width="225" height="333">
+<button class="btn" onclick="putval('P1')">VOTE FOR PARTY 1</button>
+</div>
+        
+ <div class="container">       
+<h2>PARTY 2</h2>
+<img src="http://collections.nmmusd.org/Tibet/Symbols/TibetanAuspiciousSymbol5RightTurningConch.jpg" alt="PARTY B" width="225" height="333">
+<button class="btn" onclick="putval('P2')">VOTE FOR PARTY 2</button>
+</div>
+
+<div class="container">
+<h2>PARTY 3</h2>
+<img src="https://www.spelwerx.com/image/celtic-g_3.jpg" alt="PARTY C" width="225" height="333">
+<button class="btn" onclick="putval('P3')">VOTE FOR PARTY 3</button>
+</div>
+
+<div class="container">
+<h2>PARTY 4</h2>
+<img src="http://227rsi2stdr53e3wto2skssd7xe-wpengine.netdna-ssl.com/wp-content/uploads/2011/02/LegendsLogo1.jpg" alt="PARTY D" width="225" height="333">
+<button class="btn" onclick="putval('P4')">VOTE FOR PARTY 4</button>
+</div>
+        
+        <input type="hidden" id="vote_id" name="vote_id" value="0">
+        
+        
+    </form>
+    </body>
+</html>
